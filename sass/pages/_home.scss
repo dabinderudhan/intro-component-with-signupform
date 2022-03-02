@@ -87,7 +87,7 @@
             // font-weight: $fw-bold;
             // font-style: italic;
             margin-top: 0.4rem;
-            opacity: 0;
+            display: none;
           }
         }
       }
@@ -215,6 +215,10 @@
 
 .show-opacity {
   opacity: 1;
+}
+
+.show-display {
+  display: block;
 }
 
 .redplaceholder {

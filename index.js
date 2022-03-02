@@ -18,7 +18,7 @@ const showError = function (input) {
 
   input.classList.add("show-error");
   firstSibling.classList.add("show-opacity");
-  secondSibling.classList.add("show-opacity");
+  secondSibling.classList.add("show-display");
 };
 
 // will remove errors img and message
@@ -28,7 +28,7 @@ const successInput = function (input, inputValue) {
   input.value = inputValue;
   input.classList.remove("show-error");
   firstSibling.classList.remove("show-opacity");
-  secondSibling.classList.remove("show-opacity");
+  secondSibling.classList.remove("show-display");
 };
 
 // validate email using regx
