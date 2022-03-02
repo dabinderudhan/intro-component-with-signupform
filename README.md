@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/dabinderudhan/intro-component-with-signupform)
-- Live Site URL: [live URL](https://your-live-site-url.com)
+- Live Site URL: [live URL](https://dabinderudhan.github.io/intro-component-with-signupform/)
 
 ### Built with
 
