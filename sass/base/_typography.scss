@@ -1,0 +1,121 @@
+body {
+  font-family: $ff-default;
+  font-size: $fs-default;
+  font-weight: $fw-default;
+}
+
+.btn {
+  color: $color-neutral-light;
+  font-size: 1rem;
+  font-weight: $fw-bold;
+  letter-spacing: 0.8px;
+}
+
+.intro {
+  &-left {
+    &--heading {
+      font-size: 3rem;
+      line-height: 1.1;
+      letter-spacing: 1px;
+    }
+
+    &--text {
+      line-height: 1.6;
+    }
+  }
+
+  &-right {
+    &--btn {
+      &_blue {
+        & span {
+          font-weight: $fw-boldest;
+          color: $color-white;
+        }
+      }
+
+      &_green {
+        text-transform: uppercase;
+
+        color: $color-white;
+      }
+    }
+
+    &--formdiv {
+      &_form {
+        &-inputbox {
+          &-text {
+            font-family: $ff-default;
+            font-size: $fs-default;
+            font-weight: $fw-bolder;
+          }
+
+          &-errormsg {
+            color: $color-primary-red;
+            text-align: right;
+            font-size: 0.75rem;
+            font-weight: $fw-bold;
+            font-style: italic;
+          }
+        }
+      }
+    }
+
+    &--terms {
+      color: $color-neutral-light;
+      font-size: 0.7rem;
+
+      & span {
+        color: $color-primary-red;
+        font-weight: $fw-boldest;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .intro {
+    &-left {
+      &--heading {
+        font-size: 1.5rem;
+      }
+
+      &--text {
+        font-size: 0.9rem;
+        line-height: 1.7;
+      }
+    }
+
+    &-right {
+      &--btn_blue {
+        line-height: 1.5;
+        letter-spacing: 0.5px;
+        font-size: 0.9rem;
+        font-weight: $fw-default;
+        color: $color-neutral-light;
+
+        // & span {
+        //   color: $color-white;
+        // }
+      }
+
+      &--btn_green {
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+      }
+
+      &--formdiv {
+        &_form {
+          &-inputbox {
+            &-text {
+              font-size: 0.8rem;
+            }
+
+            &-errormsg {
+              font-size: 0.65rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

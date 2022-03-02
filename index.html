@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- external css stylesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script defer src="./index.js"></script>
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body class="flex flex-col">
+    <main class="flex intro">
+      <header class="intro-left flex flex-col">
+        <h1 class="intro-left--heading">Learn to code by watching others</h1>
+        <p class="intro-left--text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+
+      <aside class="intro-right flex flex-col">
+        <button class="btn intro-right--btn_blue">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </button>
+
+        <div class="intro-right--formdiv flex flex-col">
+          <form action="/" class="intro-right--formdiv_form flex flex-col">
+            <div class="intro-right--formdiv_form-inputbox">
+              <input
+                class="intro-right--formdiv_form-inputbox-text"
+                id="firstname"
+                type="text"
+                placeholder="First Name"
+              />
+              <img
+                class="intro-right--formdiv_form-inputbox-errorimg"
+                src="./images/icon-error.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="intro-right--formdiv_form-inputbox-errormsg">
+                First Name cannot be empty
+              </p>
+            </div>
+            <div class="intro-right--formdiv_form-inputbox">
+              <input
+                class="intro-right--formdiv_form-inputbox-text"
+                id="lastname"
+                type="text"
+                placeholder="Last Name"
+              />
+              <img
+                class="intro-right--formdiv_form-inputbox-errorimg"
+                src="./images/icon-error.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="intro-right--formdiv_form-inputbox-errormsg">
+                Last Name cannot be empty
+              </p>
+            </div>
+            <div class="intro-right--formdiv_form-inputbox">
+              <input
+                class="intro-right--formdiv_form-inputbox-text"
+                id="emailaddress"
+                type="text"
+                placeholder="Email Address"
+              />
+              <img
+                class="intro-right--formdiv_form-inputbox-errorimg"
+                src="./images/icon-error.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="intro-right--formdiv_form-inputbox-errormsg">
+                Looks like this is not an email
+              </p>
+            </div>
+            <div class="intro-right--formdiv_form-inputbox">
+              <input
+                class="intro-right--formdiv_form-inputbox-text"
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
+              <img
+                class="intro-right--formdiv_form-inputbox-errorimg"
+                src="./images/icon-error.svg"
+                alt=""
+                aria-hidden="true"
+              />
+              <p class="intro-right--formdiv_form-inputbox-errormsg">
+                Password cannot be empty
+              </p>
+            </div>
+          </form>
+          <button class="btn intro-right--btn_green">
+            Claim your free trial
+          </button>
+          <p class="intro-right--terms">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dabinder Udhan</a>.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin-inline: clamp(4rem, 5.5vw, 4rem);
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: $color-primary-red;
+  color: $color-white;
+  gap: 2rem;
+}
